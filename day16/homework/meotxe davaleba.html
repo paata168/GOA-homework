@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div id="home">
+        <h1>Welcome to Our Shopping Site</h1>
+        <p>Your one-stop shop for all your needs!</p>
+    </div>
+
+    <!-- About Page -->
+    <div id="about">
+        <h1>About Us</h1>
+        <p>We are a new e-commerce brand offering high-quality products at affordable prices. We aim to make shopping easier and more enjoyable.</p>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products">
+        <h1>Our Products</h1>
+        <div class="product">
+            <img src="https://image.coolblue.nl/840x473/content/d4d500ef6963477dcfd60219c0d7f355" width="500">
+            <h3>Product 1</h3>
+            <p>$100.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://www.celletronic.com/wp-content/uploads/2024/01/Samsung-Galaxy-S24-ULTRA-BLACK.jpg" width="200">
+            <h3>Product 2</h3>
+            <p>$1200.99</p>
+            <button>Buy Now</button>
+        </div>
+        <!-- Add more products here -->
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <p>Email: eteriabesadze0@gmail.com</p>
+        <p>Phone: 598837177</p>
+    </div>
+
+    <!-- Register Page -->
+    <div id="register">
+        <h1>Register</h1>
+        <form action="/submit_registration" method="POST">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

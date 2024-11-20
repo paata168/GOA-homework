@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ასაკის გამოთვლა</title>
+    <style>
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>მომხმარებლის ასაკის გამოთვლა</h1>
+    
+    <!-- ასაკის შესაყვანი ფორმა -->
+    <label for="age">ჩაწერეთ თქვენი ასაკი: </label>
+    <input type="number" id="age" placeholder="მომხმარებლის ასაკი">
+    
+    <!-- ღილაკი, რომელიც გამოიძახებს გამოთვლის ფუნქციას -->
+    <button onclick="calculateAge()">გამოთვალე</button>
+
+    <!-- აქ გამოჩნდება შედეგი -->
+    <div id="output"></div>
+
+    <script>
+        function calculateAge() {
+            // მიიღეთ ასაკი ინტერნეტ ველისგან
+            let age = document.getElementById("age").value;
+            
+            // თუ ასაკი არის ცარიელი ან არასწორი, თხოვე მომხმარებელს, რომ შეიყვანოს სწორი მონაცემი
+            if (age && !isNaN(age)) {
+                // გამოთვალეთ ასაკის ნახევარი
+                let result = age / 2;
+
+                // მარცხენა ხაზზე დაბეჭდეთ შედეგი
+                document.getElementById("output").innerHTML = `
+                    <div class="result">
+                        <p>თქვენი ასაკი გაყოფილი 2-ზე: ${result}</p>
+                        <p>ამ მონაცემის class: result</p>
+                    </div>
+                `;
+            } else {
+                // თუ ასაკი არ არის სწორი, გამოჩნდება შეცდომის შეტყობინება
+                alert("გთხოვთ, შეიყვანოთ სწორი ასაკი.");
+            }
+        }
+    </script>
+</body>
+</html>
