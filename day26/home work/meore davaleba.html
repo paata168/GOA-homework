@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Design</title>
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container to hold the table */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Make the table responsive */
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            <caption>Employee Directory</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Software Engineer</td>
+                    <td>$80,000</td>
+                    <td>Engineering</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>Product Manager</td>
+                    <td>$95,000</td>
+                    <td>Product</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Emily Johnson</td>
+                    <td>UX Designer</td>
+                    <td>$70,000</td>
+                    <td>Design</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Michael Brown</td>
+                    <td>Data Scientist</td>
+                    <td>$85,000</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Alice Williams</td>
+                    <td>Marketing Specialist</td>
+                    <td>$60,000</td>
+                    <td>Marketing</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
