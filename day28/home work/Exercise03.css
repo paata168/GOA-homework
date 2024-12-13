@@ -1,0 +1,19 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff6347;
+    color: #fff;
+}
+.food {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #8b0000;
+}
+.food h2 {
+    color: #ffd700;
+}
+.food p {
+    color: #fff8dc;
+}
